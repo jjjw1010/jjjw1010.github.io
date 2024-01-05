@@ -1,11 +1,11 @@
 .container {
+  background-color: #184981;
+}
+.footerBar {
+  padding: 0px 40px;
   display: flex;
   flex-direction: row;
-  background-color: black;
-  padding: 0px 40px;
   justify-content: space-between;
-  //Temp
-  height: 100px;
 }
 .itemContainer {
   display: flex;
@@ -17,5 +17,9 @@
 .item {
   color: white;
   font-size: 20px;
-  padding: 5px;
+  padding: 10px;
+}
+.icons {
+  height: 100px;
+  width: 100px;
 }

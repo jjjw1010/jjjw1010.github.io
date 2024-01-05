@@ -1,10 +1,14 @@
 .container {
   display: flex;
   flex: 1;
-  background-color: beige;
+  background-color: #a2d2ff;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   height: 600px;
   font-size: 20px;
+}
+
+.header {
+  font-size: 70px;
 }
