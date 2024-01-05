@@ -1,13 +1,8 @@
 import styles from './Footer.module.scss';
 import React from 'react';
-// import ReactDOM from 'react-dom';
+
 import { SocialIcon } from 'react-social-icons';
 
-// const Component = <SocialIcon url='https://twitter.com' />;
-// React v16
-// ReactDOM.render(Component, document.body);
-// React v17+
-// ReactDOM.createRoot(document.body).render(Component);
 export default function Footer() {
   return (
     <div className={styles.container}>

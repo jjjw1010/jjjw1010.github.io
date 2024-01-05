@@ -1,4 +1,4 @@
-import styles from './Content.module.scss';
+import styles from './Intro.module.scss';
 export default function Content() {
   return (
     <div className={styles.container}>
