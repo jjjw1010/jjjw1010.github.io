@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/my-profolio/static/css/main.6193a56e.css",
-    "main.js": "/my-profolio/static/js/main.e8895876.js",
-    "static/js/787.d5ab7ad5.chunk.js": "/my-profolio/static/js/787.d5ab7ad5.chunk.js",
-    "static/media/montserrat-latin-400-normal.woff": "/my-profolio/static/media/montserrat-latin-400-normal.b48c3d9a8c0a49c1c7b4.woff",
-    "static/media/montserrat-latin-ext-400-normal.woff": "/my-profolio/static/media/montserrat-latin-ext-400-normal.cf42d14e809c6fdc0929.woff",
-    "static/media/montserrat-latin-400-normal.woff2": "/my-profolio/static/media/montserrat-latin-400-normal.9ef09180105730e3cb92.woff2",
-    "static/media/montserrat-latin-ext-400-normal.woff2": "/my-profolio/static/media/montserrat-latin-ext-400-normal.83d2d15dd908a3cf998f.woff2",
-    "static/media/montserrat-cyrillic-ext-400-normal.woff": "/my-profolio/static/media/montserrat-cyrillic-ext-400-normal.183f43730b586802d1a0.woff",
-    "static/media/montserrat-cyrillic-400-normal.woff": "/my-profolio/static/media/montserrat-cyrillic-400-normal.439a7e91c905d22b3543.woff",
-    "static/media/montserrat-cyrillic-ext-400-normal.woff2": "/my-profolio/static/media/montserrat-cyrillic-ext-400-normal.32618c7b62b4ab3c0aff.woff2",
-    "static/media/montserrat-cyrillic-400-normal.woff2": "/my-profolio/static/media/montserrat-cyrillic-400-normal.4f7a9c3142f9879900c9.woff2",
-    "static/media/montserrat-vietnamese-400-normal.woff": "/my-profolio/static/media/montserrat-vietnamese-400-normal.44e6450ead6330cb0b77.woff",
-    "static/media/montserrat-vietnamese-400-normal.woff2": "/my-profolio/static/media/montserrat-vietnamese-400-normal.176348415471f3e062e6.woff2",
-    "index.html": "/my-profolio/index.html",
-    "main.6193a56e.css.map": "/my-profolio/static/css/main.6193a56e.css.map",
-    "main.e8895876.js.map": "/my-profolio/static/js/main.e8895876.js.map",
-    "787.d5ab7ad5.chunk.js.map": "/my-profolio/static/js/787.d5ab7ad5.chunk.js.map"
+    "main.css": "/my-portfolio/static/css/main.fc654486.css",
+    "main.js": "/my-portfolio/static/js/main.2e8ebc2c.js",
+    "static/js/787.d5ab7ad5.chunk.js": "/my-portfolio/static/js/787.d5ab7ad5.chunk.js",
+    "static/media/montserrat-latin-400-normal.woff": "/my-portfolio/static/media/montserrat-latin-400-normal.b48c3d9a8c0a49c1c7b4.woff",
+    "static/media/montserrat-latin-ext-400-normal.woff": "/my-portfolio/static/media/montserrat-latin-ext-400-normal.cf42d14e809c6fdc0929.woff",
+    "static/media/montserrat-latin-400-normal.woff2": "/my-portfolio/static/media/montserrat-latin-400-normal.9ef09180105730e3cb92.woff2",
+    "static/media/montserrat-latin-ext-400-normal.woff2": "/my-portfolio/static/media/montserrat-latin-ext-400-normal.83d2d15dd908a3cf998f.woff2",
+    "static/media/montserrat-cyrillic-ext-400-normal.woff": "/my-portfolio/static/media/montserrat-cyrillic-ext-400-normal.183f43730b586802d1a0.woff",
+    "static/media/montserrat-cyrillic-400-normal.woff": "/my-portfolio/static/media/montserrat-cyrillic-400-normal.439a7e91c905d22b3543.woff",
+    "static/media/montserrat-cyrillic-ext-400-normal.woff2": "/my-portfolio/static/media/montserrat-cyrillic-ext-400-normal.32618c7b62b4ab3c0aff.woff2",
+    "static/media/montserrat-cyrillic-400-normal.woff2": "/my-portfolio/static/media/montserrat-cyrillic-400-normal.4f7a9c3142f9879900c9.woff2",
+    "static/media/montserrat-vietnamese-400-normal.woff": "/my-portfolio/static/media/montserrat-vietnamese-400-normal.44e6450ead6330cb0b77.woff",
+    "static/media/montserrat-vietnamese-400-normal.woff2": "/my-portfolio/static/media/montserrat-vietnamese-400-normal.176348415471f3e062e6.woff2",
+    "index.html": "/my-portfolio/index.html",
+    "main.fc654486.css.map": "/my-portfolio/static/css/main.fc654486.css.map",
+    "main.2e8ebc2c.js.map": "/my-portfolio/static/js/main.2e8ebc2c.js.map",
+    "787.d5ab7ad5.chunk.js.map": "/my-portfolio/static/js/787.d5ab7ad5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6193a56e.css",
-    "static/js/main.e8895876.js"
+    "static/css/main.fc654486.css",
+    "static/js/main.2e8ebc2c.js"
   ]
 }
