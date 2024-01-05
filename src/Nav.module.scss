@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  padding: 0px 40px;
+  justify-content: space-between;
+}
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+.logo {
+  color: white;
+  font-weight: 900;
+  font-size: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+.itemContainer {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.item {
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+}

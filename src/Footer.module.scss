@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  padding: 0px 40px;
+  justify-content: space-between;
+  //Temp
+  height: 100px;
+}
+.itemContainer {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  flex: 1;
+  align-items: center;
+}
+.item {
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+}
