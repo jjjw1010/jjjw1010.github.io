@@ -3,6 +3,14 @@ import React, { useEffect, useState } from 'react';
 
 export default function Nav() {
   const [scrolling, setScrolling] = useState(false);
+  const handleScrollButtonClick = (scrollvalue) => {
+    if (scrollvalue !== undefined) {
+      window.scrollTo({
+        top: scrollvalue,
+        behavior: 'smooth', // Use smooth scrolling
+      });
+    }
+  };
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY === 0) {
@@ -25,12 +33,32 @@ export default function Nav() {
           <div className={styles.logo}>JJ</div>
         </div>
         <div className={styles.itemContainer}>
-          <div className={styles.item}> Projects</div>
-          <div className={styles.item}> Resume</div>
-          <div className={styles.item}> Contact</div>
+          <div
+            className={styles.item}
+            onClick={() => handleScrollButtonClick(720)}
+          >
+            CS Projects
+          </div>
+          <div
+            className={styles.item}
+            onClick={() => handleScrollButtonClick(1520)}
+          >
+            ECE Projects
+          </div>
+          <div
+            className={styles.item}
+            onClick={() => handleScrollButtonClick(2320)}
+          >
+            Resume
+          </div>
+          <div
+            className={styles.item}
+            onClick={() => handleScrollButtonClick(3000)}
+          >
+            Contact
+          </div>
         </div>
       </div>
-      {/* <header className='App-header'></header> */}
     </div>
   );
 }

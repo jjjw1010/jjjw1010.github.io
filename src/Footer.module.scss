@@ -1,8 +1,10 @@
 .container {
-  background-color: #184981;
+  background-color: #0586ff;
+  color: white;
+  font-size: 20px;
 }
 .footerBar {
-  padding: 0px 40px;
+  padding: 20px 40px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -10,16 +12,7 @@
 .itemContainer {
   display: flex;
   gap: 20px;
-  justify-content: flex-end;
+  justify-content: flex-start;
   flex: 1;
   align-items: center;
-}
-.item {
-  color: white;
-  font-size: 20px;
-  padding: 10px;
-}
-.icons {
-  height: 100px;
-  width: 100px;
 }

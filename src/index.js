@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import Nav from './Nav';
 import Intro from './Intro';
-import Projects from './Projects';
+import CSProjects from './CSProjects';
+import CEProjects from './CEProjects';
+import Resume from './Resume';
 import Footer from './Footer';
 import reportWebVitals from './reportWebVitals';
 
@@ -14,7 +16,9 @@ root.render(
   <React.StrictMode>
     <Nav />
     <Intro />
-    <Projects />
+    <CSProjects />
+    <CEProjects />
+    <Resume />
     <Footer />
   </React.StrictMode>
 );

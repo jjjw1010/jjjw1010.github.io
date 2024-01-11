@@ -1,5 +1,15 @@
+import { useEffect } from 'react';
 import styles from './Intro.module.scss';
 export default function Content() {
+  useEffect(() => {
+    const handleScroll = () => {
+      console.log(window.scrollY);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
     <div className={styles.container}>
       <div className={styles.header}>Hello World!</div>

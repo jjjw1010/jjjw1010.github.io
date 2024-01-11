@@ -14,6 +14,7 @@ export default function Footer() {
             bgColor='transparent'
             url='https://github.com/jjjw1010'
           />
+
           <SocialIcon
             network='email'
             bgColor='transparent'
