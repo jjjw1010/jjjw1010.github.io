@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+
 import Nav from './Nav';
-import Intro from './Intro';
-import CSProjects from './CSProjects';
-import CEProjects from './CEProjects';
-import Resume from './Resume';
+import Content from './Content';
+import Projects from './Projects';
 import Footer from './Footer';
+
+import { BrowserRouter } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 
 import '@fontsource/montserrat';
@@ -14,12 +15,12 @@ import '@fontsource/montserrat';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Nav />
-    <Intro />
-    <CSProjects />
-    <CEProjects />
-    <Resume />
-    <Footer />
+    <BrowserRouter>
+      <Nav />
+      <Content />
+      <Projects />
+      <Footer />
+    </BrowserRouter>
   </React.StrictMode>
 );
 

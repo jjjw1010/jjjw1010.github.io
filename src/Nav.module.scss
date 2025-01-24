@@ -1,72 +1,51 @@
+
 .container {
-  z-index: 900;
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  transition: background-color 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  z-index: 900;
+  background-color: white;
+  transition: background-color 0.3s ease;
+  height: 60px; /* Fixed height to ensure consistency */
+  overflow: hidden; /* Prevent content overflow when scrolled */
+  border-bottom: 1px solid #d3d3d3; /* Added gray line at the bottom */
 }
+
 .isScrolled {
   background-color: white;
 }
+
 .navBar {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  flex: 1;
   align-items: center;
-  padding: 0px 40px;
+  height: 60px; /* Ensures consistent height */
+  padding: 0 20px;
+  flex-wrap: nowrap; /* Prevent stacking */
 }
-.container.is-scrolled {
-  background-color: blue;
-}
-@keyframes moveUpDown {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-10px);
-  }
-}
+
 .logoContainer {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80px;
-  transition: transform 0.5s ease-in-out;
-  :hover {
-    animation: moveUpDown 0.5s infinite alternate;
-  }
-}
-.logo {
-  color: black;
-  font-weight: 900;
-  font-size: 30px;
-  line-height: 40px;
-  justify-content: center;
   align-items: center;
   cursor: pointer;
-  // transition: transform 0.3s ease-in-out;
-  :hover {
-    // transform: translateY(-10px);
-    color: blue;
-  }
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
 }
 
 .itemContainer {
   display: flex;
-  gap: 20px;
-  justify-content: center;
+  gap: 15px;
+  justify-content: flex-end;
   align-items: center;
-  transition: transform 0.5s ease-in-out;
-  :hover {
-    animation: moveUpDown 0.5s infinite alternate;
-  }
 }
+
 .item {
+  font-size: 16px;
   color: black;
-  font-size: 20px;
-  line-height: 20px;
-  padding: 5px 5px;
   cursor: pointer;
-  align-items: center;
-  justify-content: center;
 }

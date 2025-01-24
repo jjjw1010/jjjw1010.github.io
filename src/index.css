@@ -9,3 +9,13 @@ body {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 } */
+
+/* For Hiding Scroll Bar */
+html, body {
+  overflow: auto; /* Allow scrolling */
+  scrollbar-width: none; /* For Firefox */
+}
+
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+  display: none; /* For Chrome, Edge, and Safari */
+}

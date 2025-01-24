@@ -1,62 +1,40 @@
-import styles from './Nav.module.scss';
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import styles from './Nav.module.scss';
 
 export default function Nav() {
-  const [scrolling, setScrolling] = useState(false);
-  const handleScrollButtonClick = (scrollvalue) => {
-    if (scrollvalue !== undefined) {
-      window.scrollTo({
-        top: scrollvalue,
-        behavior: 'smooth', // Use smooth scrolling
-      });
-    }
+  const [isScrolled, setIsScrolled] = useState(false);
+  const navigate = useNavigate();
+
+  const handleScroll = () => {
+    setIsScrolled(window.scrollY > 0);
   };
+
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY === 0) {
-        setScrolling(false);
-      } else {
-        setScrolling(true);
-      }
-    };
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  const openResume = () => {
+    window.open('/resume.pdf', '_blank');
+  };
+
+  const goToHome = () => {
+    navigate('/');
+  };
+
   return (
     <div
-      className={`${styles.container} ${scrolling ? styles.isScrolled : ''}`}
+      className={`${styles.container} ${isScrolled ? styles.isScrolled : ''}`}
     >
       <div className={styles.navBar}>
-        <div className={styles.logoContainer}>
+        <div className={styles.logoContainer} onClick={goToHome}>
           <div className={styles.logo}>JJ</div>
         </div>
         <div className={styles.itemContainer}>
-          <div
-            className={styles.item}
-            onClick={() => handleScrollButtonClick(720)}
-          >
-            CS Projects
-          </div>
-          <div
-            className={styles.item}
-            onClick={() => handleScrollButtonClick(1520)}
-          >
-            ECE Projects
-          </div>
-          <div
-            className={styles.item}
-            onClick={() => handleScrollButtonClick(2320)}
-          >
-            Resume
-          </div>
-          <div
-            className={styles.item}
-            onClick={() => handleScrollButtonClick(3000)}
-          >
-            Contact
-          </div>
+          <div className={styles.item} onClick={openResume}>Resume</div>
         </div>
       </div>
     </div>
