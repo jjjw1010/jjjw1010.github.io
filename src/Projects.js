@@ -5,19 +5,19 @@ export default function Projects() {
       <div className={styles.container}>
         <div className={styles.contentBox}>
           <div className={styles.card}>
-            <h3 className={styles.cardTitle}>Project 1</h3>
+            <h3 className={styles.cardTitle}>Simple RISC-V Multi-Core System</h3>
             <p className={styles.cardDescription}>
                 TBD
             </p>
           </div>
           <div className={styles.card}>
-            <h3 className={styles.cardTitle}>Project 2</h3>
+            <h3 className={styles.cardTitle}>FPGA-Based Heart Rate Monitor</h3>
             <p className={styles.cardDescription}>
                 TBD
             </p>
           </div>
           <div className={styles.card}>
-            <h3 className={styles.cardTitle}>Project 3</h3>
+            <h3 className={styles.cardTitle}>Interactive Website</h3>
             <p className={styles.cardDescription}>
                 TBD
             </p>
