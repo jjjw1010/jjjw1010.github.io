@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Nav from './Nav';
-import Content from './Content';
-import Projects from './Projects';
-import Footer from './Footer';
+import Nav from './Nav.jsx';
+import Content from './Content.jsx';
+import Projects from './Projects.jsx';
+import Footer from './Footer.jsx';
 import '@fontsource/montserrat/400.css';
 import '@fontsource/montserrat/500.css';
 import '@fontsource/montserrat/600.css';
