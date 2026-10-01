@@ -15,6 +15,9 @@
 }
 
 .contact {
+  min-width: 0;
+  max-width: 100%;
+
   h2 {
     margin: 0;
     font-size: clamp(1.9rem, 4vw, 2.75rem);
@@ -42,6 +45,7 @@
 
 .email {
   display: inline-flex;
+  max-width: 100%;
   align-items: center;
   gap: 0.75rem;
   border-radius: 0.25rem;
@@ -56,11 +60,17 @@
     flex-shrink: 0;
     font-size: 1.25rem;
   }
+
+  span {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
 }
 
 .socialLinks {
   display: flex;
   flex-wrap: wrap;
+  max-width: 100%;
   gap: 0.75rem;
 
   a {
@@ -100,5 +110,23 @@
   .content {
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding-block: 3rem;
+  }
+
+  .content {
+    gap: 1.5rem;
+  }
+
+  .socialLinks {
+    width: 100%;
+
+    a {
+      flex: 1 1 8.5rem;
+    }
   }
 }

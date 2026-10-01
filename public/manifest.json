@@ -3,14 +3,19 @@
   "name": "Junwoo Jung | Software Engineer",
   "icons": [
     {
-      "src": "globe.svg",
-      "sizes": "64x64 32x32 24x24 16x16",
+      "src": "favicon.svg",
+      "sizes": "any",
       "type": "image/svg+xml"
     },
     {
-      "src": "globe.png",
+      "src": "icon-192.png",
       "type": "image/png",
-      "sizes": "100x100"
+      "sizes": "192x192"
+    },
+    {
+      "src": "icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
   ],
   "start_url": ".",

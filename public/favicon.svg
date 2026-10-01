@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>JJ</title>
+  <defs>
+    <linearGradient id="blue" x1="0" y1="0" x2="100%" y2="100%">
+      <stop stop-color="#2788cf" />
+      <stop offset="1" stop-color="#0b4479" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#blue)" />
+  <rect x="0.75" y="0.75" width="62.5" height="62.5" rx="15.25" fill="none" stroke="#fff" stroke-opacity="0.2" />
+  <g fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.5 0)">
+    <path d="M14 19h10v18.5c0 5.5-2.5 8.5-6.5 8.5S11 43 11 39" />
+    <path d="M14 19h10v18.5c0 5.5-2.5 8.5-6.5 8.5S11 43 11 39" transform="translate(26 0)" />
+  </g>
+</svg>

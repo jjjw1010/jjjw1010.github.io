@@ -9,9 +9,9 @@ export default function Footer() {
           <p className={styles.eyebrow}>Contact</p>
           <h2 id="contact-heading">Let's connect.</h2>
           <p className={styles.description}>Have a question or want to connect? Send me an email.</p>
-          <a className={styles.email} href="mailto:jjjw1010@gmail.com">
+          <a className={styles.email} href="mailto:junwoo.jung.dev@gmail.com">
             <FiMail aria-hidden="true" />
-            <span>jjjw1010@gmail.com</span>
+            <span>junwoo.jung.dev@gmail.com</span>
           </a>
         </div>
         <nav className={styles.socialLinks} aria-label="Social profiles">
