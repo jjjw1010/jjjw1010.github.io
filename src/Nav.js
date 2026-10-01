@@ -1,42 +1,27 @@
-import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { FiArrowUpRight } from 'react-icons/fi';
 import styles from './Nav.module.scss';
 
 export default function Nav() {
-  const [isScrolled, setIsScrolled] = useState(false);
-  const navigate = useNavigate();
-
-  const handleScroll = () => {
-    setIsScrolled(window.scrollY > 0);
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  const openResume = () => {
-    window.open('/resume.pdf', '_blank');
-  };
-
-  const goToHome = () => {
-    navigate('/');
-  };
-
   return (
-    <div
-      className={`${styles.container} ${isScrolled ? styles.isScrolled : ''}`}
-    >
-      <div className={styles.navBar}>
-        <div className={styles.logoContainer} onClick={goToHome}>
-          <div className={styles.logo}>JJ</div>
-        </div>
+    <header className={styles.container}>
+      <nav className={styles.navBar} aria-label="Main navigation">
+        <a className={styles.logo} href="#home" aria-label="Junwoo Jung, home">
+          JJ<span>.</span>
+        </a>
         <div className={styles.itemContainer}>
-          <div className={styles.item} onClick={openResume}>Resume</div>
+          <a className={styles.item} href="#projects">Projects</a>
+          <a className={styles.item} href="#contact">Contact</a>
+          <a
+            className={styles.github}
+            href="https://github.com/jjjw1010"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub profile (opens in a new tab)"
+          >
+            GitHub <FiArrowUpRight aria-hidden="true" />
+          </a>
         </div>
-      </div>
-    </div>
+      </nav>
+    </header>
   );
 }

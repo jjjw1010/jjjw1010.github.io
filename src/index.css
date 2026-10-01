@@ -1,21 +1,83 @@
+:root {
+  --color-text: #12324b;
+  --color-muted: #536c80;
+  --color-accent: #1261a0;
+  --color-accent-dark: #074b80;
+  --color-surface: #fff;
+  --color-bg: #f0f7fc;
+  --color-border: #d5e5f0;
+  --layout-width: 1120px;
+  --page-gutter: clamp(1.25rem, 4vw, 3rem);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  margin: 0;
-  font-family: 'Montserrat';
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
-
-/* For Hiding Scroll Bar */
-html, body {
-  overflow: auto; /* Allow scrolling */
-  scrollbar-width: none; /* For Firefox */
+body, h1, h2, h3, p {
+  margin: 0;
 }
 
-html::-webkit-scrollbar, body::-webkit-scrollbar {
-  display: none; /* For Chrome, Edge, and Safari */
+a {
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+main[id], section[id], footer[id] {
+  scroll-margin-top: 6rem;
+}
+
+:focus-visible {
+  outline: 3px solid #2586cc;
+  outline-offset: 5px;
+}
+
+::selection {
+  color: var(--color-text);
+  background: #b7dcfa;
+}
+
+.skip-link {
+  position: fixed;
+  z-index: 1000;
+  top: 1rem;
+  left: 1rem;
+  padding: 0.75rem 1rem;
+  transform: translateY(-200%);
+  border-radius: 0.5rem;
+  background: var(--color-accent-dark);
+  color: #fff;
+  font-weight: 600;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+  }
 }

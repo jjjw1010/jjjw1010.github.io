@@ -1,30 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-
 import Nav from './Nav';
 import Content from './Content';
 import Projects from './Projects';
 import Footer from './Footer';
-
-import { BrowserRouter } from 'react-router-dom';
-import reportWebVitals from './reportWebVitals';
-
-import '@fontsource/montserrat';
+import '@fontsource/montserrat/400.css';
+import '@fontsource/montserrat/500.css';
+import '@fontsource/montserrat/600.css';
+import '@fontsource/montserrat/700.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <Nav />
+    <a className="skip-link" href="#main-content">Skip to content</a>
+    <Nav />
+    <main id="main-content" tabIndex={-1}>
       <Content />
       <Projects />
-      <Footer />
-    </BrowserRouter>
+    </main>
+    <Footer />
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

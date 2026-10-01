@@ -1,31 +1,31 @@
+import { FiArrowUpRight, FiGithub, FiLinkedin, FiMail } from 'react-icons/fi';
 import styles from './Footer.module.scss';
-import React from 'react';
-import { SocialIcon } from 'react-social-icons';
 
 export default function Footer() {
   return (
-    <footer className={styles.container}>
-      <div className={styles.footerBar}>
-        <div className={styles.itemContainer}>
-          <SocialIcon
-            network='github'
-            bgColor='transparent'
-            fgColor='white'
-            url='https://github.com/jjjw1010'
-          />
-          <SocialIcon
-            network='email'
-            bgColor='transparent'
-            fgColor='white'
-            url='mailto:jjjw1010@gmail.com'
-          />
-          <SocialIcon
-            network='linkedin'
-            bgColor='transparent'
-            fgColor='white'
-            url='https://www.linkedin.com/in/junwoojung/'
-          />
+    <footer id="contact" className={styles.container} aria-labelledby="contact-heading">
+      <div className={styles.content}>
+        <div className={styles.contact}>
+          <p className={styles.eyebrow}>Contact</p>
+          <h2 id="contact-heading">Let's connect.</h2>
+          <p className={styles.description}>Have a question or want to connect? Send me an email.</p>
+          <a className={styles.email} href="mailto:jjjw1010@gmail.com">
+            <FiMail aria-hidden="true" />
+            <span>jjjw1010@gmail.com</span>
+          </a>
         </div>
+        <nav className={styles.socialLinks} aria-label="Social profiles">
+          <a href="https://github.com/jjjw1010" target="_blank" rel="noopener noreferrer" aria-label="GitHub (opens in a new tab)">
+            <FiGithub aria-hidden="true" />
+            <span>GitHub</span>
+            <FiArrowUpRight aria-hidden="true" />
+          </a>
+          <a href="https://www.linkedin.com/in/junwoojung/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in a new tab)">
+            <FiLinkedin aria-hidden="true" />
+            <span>LinkedIn</span>
+            <FiArrowUpRight aria-hidden="true" />
+          </a>
+        </nav>
       </div>
     </footer>
   );

@@ -1,51 +1,67 @@
-
 .container {
-  position: fixed;
+  position: sticky;
   top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 900;
-  background-color: white;
-  transition: background-color 0.3s ease;
-  height: 60px; /* Fixed height to ensure consistency */
-  overflow: hidden; /* Prevent content overflow when scrolled */
-  border-bottom: 1px solid #d3d3d3; /* Added gray line at the bottom */
-}
-
-.isScrolled {
-  background-color: white;
+  z-index: 100;
+  padding-inline: var(--page-gutter);
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-surface);
 }
 
 .navBar {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  align-items: center;
-  height: 60px; /* Ensures consistent height */
-  padding: 0 20px;
-  flex-wrap: nowrap; /* Prevent stacking */
-}
-
-.logoContainer {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
+  gap: 1rem;
+  max-width: var(--layout-width);
+  min-height: 76px;
+  margin-inline: auto;
 }
 
 .logo {
-  font-size: 24px;
-  font-weight: bold;
-  color: black;
+  color: var(--color-text);
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: -0.08em;
+  text-decoration: none;
+
+  span {
+    color: var(--color-accent);
+  }
 }
 
 .itemContainer {
   display: flex;
-  gap: 15px;
-  justify-content: flex-end;
   align-items: center;
+  gap: clamp(1rem, 3vw, 2rem);
+  font-size: 0.875rem;
+  font-weight: 600;
 }
 
-.item {
-  font-size: 16px;
-  color: black;
-  cursor: pointer;
+.item, .github {
+  padding-block: 0.6rem;
+  text-decoration: none;
+  transition: color 160ms ease;
+
+  &:hover {
+    color: var(--color-accent);
+  }
+}
+
+.github {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--color-accent);
+}
+
+@media (max-width: 480px) {
+  .navBar {
+    min-height: 68px;
+    gap: 0.75rem;
+  }
+
+  .itemContainer {
+    gap: 0.85rem;
+    font-size: 0.75rem;
+  }
 }
