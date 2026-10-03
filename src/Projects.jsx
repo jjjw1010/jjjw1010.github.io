@@ -16,7 +16,7 @@ const projects = [
   {
     title: 'Maze Navigator',
     category: 'Embedded robotics',
-    metadata: 'Cornell ECE 3400 | Arduino, MATLAB, LTspice',
+    metadata: 'Arduino, MATLAB, LTspice | Cornell ECE 3400',
     href: 'https://github.com/jjjw1010/Maze-Navigator',
     Icon: FiNavigation,
     highlights: [
